@@ -1,7 +1,7 @@
 public class ArrayUtility {
 
     public static void print(int[] array) {
-
+        System.out.println(2);
     }
 
     public static int sum(int[] array) {
