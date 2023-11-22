@@ -14,14 +14,14 @@ public class ArrayUtility {
     }
 
     public static double average(int[] array) {
-        double result = 0.0;
-        double average = 0.0;
-        for (int i = 0; i<array.length;i++){
-            average += array[i];
+        double total = 0;
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+            total += array[i];
         }
-        result = average/array.length;
-        return Math.round(result*100.0)/100.0;
-
+        double unRounded = total / array.length;
+        double roundedNumber = Math.floor(unRounded * 100.0) / 100.0;
+        return roundedNumber;
     }
 
     public static int minimum(int[] array) {
